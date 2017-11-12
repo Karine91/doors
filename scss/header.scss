@@ -1,0 +1,40 @@
+.header{
+padding: 45px 0;
+background-color: $darkbrown;
+height: 370px;
+color: #fff; 
+}
+.logo{
+    width: 120px;
+    float: left;
+    margin-right: 140px;
+}
+.logo__link, .logo__img{
+    width: 100%;
+}
+.stars-block{
+    float: left;
+}
+.stars-list{
+    padding: 0;
+    list-style: none;
+}
+.stars-list__item{
+    font-size: 12px;
+    color: rgba(#fff, .5);
+    margin-right: 40px;
+    float: left;
+    &:before{
+        content: "\e800";
+        color: $bege;
+        font-family: "fontello";
+        font-size: 16px;
+        margin-right: 15px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.stars-list__txt{
+    display: inline-block;
+    vertical-align: middle;
+}
