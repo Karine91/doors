@@ -25,7 +25,26 @@ html(lang="ru")
                                     Более 10000 дверей на складе
                             li.stars-list__item
                                 span.stars-list__txt. 
-                                    Более 30 дилеров                       
+                                    Более 30 дилеров
+                    .phone
+                         span.phohe-code 8 (4833) 
+                         span.phone-end 52-02-66
+            .header-nav
+                .container.p-0
+                    .navbar
+                        ul.nav.navbar-nav
+                            - var menu=["Главная", "Каталог", "О заводе", "Контакты", "обратная связь"]
+                            each item, ind in menu
+                                li(class=(ind==0)? "active": undefined)
+                                    a.nav-link(href="#") #{item}
+                                        if(ind==0)                
+                                            span.sr-only (current)
+                        form.navbar-form
+                            .navbar-search
+                                .form-group
+                                    input.form-control.input-search(type="search" placeholder="Поиск по сайту ..." aria-label="Search")
+                                button(class="btn-search" type="submit")
+                                    span.glyphicon.glyphicon-search(aria-hidden="true")
 
 
 

@@ -2,7 +2,7 @@
 padding: 45px 0;
 background-color: $darkbrown;
 height: 370px;
-color: #fff; 
+color: $white; 
 }
 .logo{
     width: 120px;
@@ -14,14 +14,16 @@ color: #fff;
 }
 .stars-block{
     float: left;
+    padding-top: 20px;
 }
 .stars-list{
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 .stars-list__item{
     font-size: 12px;
-    color: rgba(#fff, .5);
+    color: rgba($white, .5);
     margin-right: 40px;
     float: left;
     &:before{
@@ -37,4 +39,98 @@ color: #fff;
 .stars-list__txt{
     display: inline-block;
     vertical-align: middle;
+}
+.phone{
+  float: right;
+  padding-top: 12px;
+}
+.phohe-code{
+    font-size: 16px;
+    margin-right: 5px;
+}
+.phone-end{
+    color: $white;
+    font-size: 28px;
+    line-height: 1;
+    font-family: "GothamPro-Bold";
+}
+.header-nav{
+    padding-top: 40px;
+}
+.navbar{
+    width: 100%;
+    margin: 0;
+}
+.navbar .navbar-nav{
+    padding-left: 0;
+    padding-right: 0;
+    .nav-link{
+        text-transform: uppercase;
+        color: rgba($white, 0.5);
+        font-family: "GothamPro-Light";
+        font-size: 16px;
+        padding: 10px;
+        border-bottom: 1px solid rgba($lighbrown, 0.1);
+        margin-right: 35px;
+        background: none;
+        transition: all ease 300ms;
+        &:hover, &:active{
+            color: rgba($white, 1);
+            border-bottom: 1px solid rgba($lighbrown, 1);
+            background: none;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    li.active .nav-link{
+        color: rgba($white, 1);
+        border-bottom: 1px solid rgba($lighbrown, 1);
+        background: none;
+    } 
+}
+
+.navbar-form{
+    float: right;
+}
+.navbar-search{
+    width: 270px;
+    .form-group{
+        width: 100%;
+    }
+}
+.btn-search{
+    background: none;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -13px;
+}
+
+.navbar-form .form-control.input-search{
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 10px 0;
+    color: $white;
+    background: none;
+    position: relative;
+    font-family: "GothamPro-Light";
+    border-bottom: 1px solid rgba($white, 0.1);
+    @include placeholder(){
+        color: rgba($white, 0.5)
+    };
+    font-size: 12px;
+    &:focus{
+        border-bottom: 1px solid rgba($white, 1);
+        box-shadow: none;
+        @include placeholder(){
+            color: rgba($white, 1)
+        };
+    }
+}
+.glyphicon-search{
+    color: $lighbrown;  
 }
