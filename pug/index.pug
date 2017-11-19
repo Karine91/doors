@@ -6,48 +6,217 @@ html(lang="ru")
         title Document
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         link(href="fonts/font.css" rel="stylesheet")
-        link(href="css/fontello-codes.css" rel="stylesheet")
-        link(href="css/fontello.css" rel="stylesheet")
         link(href="css/style.css" rel="stylesheet")
-        header.header
-            .header-top
-                .container
-                    .logo
-                        a(href="#").logo__link
-                            img(src="img/logo.png").logo__img
-                    .stars-block
-                        ul.stars-list.clearfix
-                            li.stars-list__item
-                                span.stars-list__txt. 
-                                    Работаем с 1991 года
-                            li.stars-list__item
-                                span.stars-list__txt. 
-                                    Более 10000 дверей на складе
-                            li.stars-list__item
-                                span.stars-list__txt. 
-                                    Более 30 дилеров
-                    .phone
-                         span.phohe-code 8 (4833) 
-                         span.phone-end 52-02-66
-            .header-nav
+    body    
+        .main
+            header.header
+                .header-top
+                    .container.p-0
+                        .logo
+                            a(href="#").logo__link
+                                img(src="img/logo.png" alt="").logo__img
+                        .stars-block
+                            ul.stars-list.clearfix
+                                li.stars-list__item
+                                    span.stars-list__txt. 
+                                        Работаем с 1991 года
+                                li.stars-list__item
+                                    span.stars-list__txt. 
+                                        Более 10000 дверей на складе
+                                li.stars-list__item
+                                    span.stars-list__txt. 
+                                        Более 30 дилеров
+                        .phone
+                            span.phohe-code 8 (4833) 
+                            span.phone-end 52-02-66
+                .header-nav
+                    .container.p-0
+                        .navbar
+                            ul.nav.navbar-nav
+                                - var menu=["Главная", "Каталог", "О заводе", "Контакты", "обратная связь"]
+                                each item, ind in menu
+                                    li(class=(ind==0)? "active": undefined)
+                                        a.nav-link(href="#" data-toggle=(ind==4)? 'modal' : undefined data-target=(ind==4)? "#modalForm" : undefined) #{item}
+                                            if(ind==0)                
+                                                span.sr-only (current)
+                            form.navbar-form
+                                .navbar-search
+                                    .form-group
+                                        input.form-control.form-input(type="search" placeholder="Поиск по сайту ..." aria-label="Search")
+                                    button(class="btn-search" type="submit")
+                                        span.glyphicon.glyphicon-search(aria-hidden="true")
+            section.preview
                 .container.p-0
-                    .navbar
-                        ul.nav.navbar-nav
-                            - var menu=["Главная", "Каталог", "О заводе", "Контакты", "обратная связь"]
-                            each item, ind in menu
-                                li(class=(ind==0)? "active": undefined)
-                                    a.nav-link(href="#") #{item}
-                                        if(ind==0)                
-                                            span.sr-only (current)
-                        form.navbar-form
-                            .navbar-search
-                                .form-group
-                                    input.form-control.input-search(type="search" placeholder="Поиск по сайту ..." aria-label="Search")
-                                button(class="btn-search" type="submit")
-                                    span.glyphicon.glyphicon-search(aria-hidden="true")
-
-
-
-    body
+                    .row
+                        .col-xs-8
+                            #carousel.carousel.slide
+                                .transition-timer-carousel-progress-bar
+                                ol.carousel-indicators
+                                    li.active(data-target="#carousel" data-slide-to="0")
+                                    li(data-target="#carousel" data-slide-to="1")
+                                    li(data-target="#carousel" data-slide-to="2")
+                                    li(data-target="#carousel" data-slide-to="3")
+                                .carousel-inner
+                                    each elem, index in [1, 2, 3, 4]
+                                        .item(class=(index==1) ? 'active' : underfined )
+                                            img(src="img/slide1.jpg" alt="")
+                                            .carousel-caption
+                                                .caption-text
+                                                    .caption-title Стильные двери <br> от наших дизайнеров #{elem}
+                                                    .caption-describe по самым лучшим ценам
+                                                a.details-link(href="#").caption-link
+                                                    i.glyphicon.glyphicon-menu-right 
+                                                    | Подробнее
+                        .banner-wrap.col-xs-4
+                            .banner
+                                .banner-text
+                                    .banner-describtion Новая модель
+                                    a(href="#").link-title.mb-50 Темный орех
+                                .banner-picture
+                                    img(src="img/banner.jpg" alt="").banner-img
+                    .categories
+                        .row
+                            .col-xs-6
+                                .category
+                                    .category-text
+                                        a(href="#").link-title Двери из ЭКОШПОНА
+                                        p.
+                                            Экошпон – современный экологически чистый материал.  Двери изготавливаются из волокон только натуральной древесины. На финальном этапе двери покрываются защитным слоем вещества искусственного происхождения, который обеспечивает долгий срок службы дверного полотна. Экологически чистое покрытие не выделяет вредных веществ.
+                                    .category-picture
+                                        img(src="img/category1.jpg" alt="")        
+                            .col-xs-6
+                                .category.dark
+                                    .category-text
+                                        a(href="#").link-title Двери из СТЕКЛА
+                                        p.
+                                            Цельностеклянные двери стали широко использоваться сравнительно недавно. Благодаря новым технологиям обработки стекла стало возможно их производство с усовершенствованными характеристиками. Теперь это прочный и безопасный материал для использования в дизайне интерьеров.
+                                    .category-picture
+                                        img(src="img/category2.jpg" alt="")
+            section.catalog
+                .container.p-0
+                    .section-header
+                        .row
+                            .col-xs-6
+                                h2.section-title Каталог    
+                            .col-xs-6
+                                ul.filters.nav.nav-pills
+                                    - var filter = ['Стекло', 'Экошпон', 'Хиты продаж', 'Новинки']
+                                    each item, ind in filter
+                                        li(class=(ind==2)? "active": undefined role="presentation").filters__item
+                                            a(href="#").filters__link #{item}
+                    .section-content
+                        .catalog-wrap
+                            .row
+                                each item in [1, 2, 3, 4]
+                                    .col-xs-3
+                                        .product
+                                            .product__title  Дверь элегия
+                                            .product-view.clearfix
+                                                .product__picture
+                                                    img(src="img/banner.jpg" alt="").product__img
+                                                .product__character
+                                                    .property-name  Материал:
+                                                    .property-value  Экошпон
+                                                    .property-name  Цвет:
+                                                    ul.colors-list.clearfix
+                                                        each color in ['#2a064b', '#4d0909', '#fff6f6', '#1d1d1d', '#3f0133']
+                                                            li.color-item(style="background:" + color)
+                                                    .labels
+                                                        .label-item NEW
+                                                        .label-item хит
+                                            .product__describtion
+                                                p.
+                                                    Дверь — проём в стене для входа и выхода из помещения, или проём во внутреннее пространство чего-либо
+                                            a.details-link.details-btn(href="#")
+                                                i.glyphicon.glyphicon-menu-right 
+                                                | Подробнее
+        section.production
+            .container.p-0
+                .section-header
+                    .row
+                        .col-xs-12
+                            h2.section-title Наше производство в деталях
+            .section-content.clearfix
+                .production__item
+                    img(src="img/1.jpg").production__img
+                    .production__describtion
+                        .production__text
+                            span.text-highlight Более 107 
+                            | <br> человек работают <br> над дверьми
+                .production__item
+                    img(src="img/2.jpg").production__img
+                    .production__describtion
+                        .production__text
+                            | Европейские <br> технологии - 
+                            span.text-highlight 10 лет
+                .production__item
+                    img(src="img/3.jpg").production__img
+                    .production__describtion
+                        .production__text
+                            | Доставка во все <br> регионы 
+                            span.text-highlight от 1 дня
+        footer.footer
+            .container.p-0
+                .footer-menu.col-xs-6.p-0
+                    .menu-group.col-xs-6
+                        .category-menu-title Двери из экошпона
+                        ul.menu-category
+                            -var footer_menu = ['Барселона', 'Мадрид', 'Венеция', 'Европа','Офелия',   'Италия']
+                            each item in footer_menu
+                                li.footer-menu__item
+                                    a(href="#").footer-menu__link #{item}
+                    .menu-group.col-xs-6
+                        .category-menu-title Двери из стекла
+                        ul.menu-category
+                            -var footer_menu = ['Барселона', 'Мадрид', 'Венеция', 'Европа','Офелия',   'Италия']
+                            each item in footer_menu
+                                li.footer-menu__item
+                                    a(href="#").footer-menu__link #{item}
+                .contacts-wrap.col-xs-6.p-0
+                    .map
+                        <iframe src="https://yandex.ua/map-widget/v1/-/CBaVU8F42C" width="270" height="250" frameborder="0"></iframe>
+                    .contacts
+                        .contacts__phone
+                            .contacts-title телефон
+                            .contats-content.
+                                8 (4833) 52-02-66 <br>
+                                8 (961) 000-07-09
+                        
+                        .contacts__mail
+                            .contacts-title e-mail
+                            .contats-content.   
+                                zakaz@triplex-doors.ru <br>
+                                zakaz@triplex-profil.ru <br>
+                                tovmasyan@bk.ru
+                        
+                        .contacts__address
+                            .contacts-title адрес   
+                            .contats-content. 
+                                Карачев, Дзержинского, 140 
+        #modalForm.modal.fade(tabindex="-1" role="dialog")
+            .modal-dialog(role="document")
+                .modal-content
+                    .modal-header
+                        button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                            span(aria-hidden="true").glyphicon.glyphicon-remove
+                        .modal-title Форма загаловок
+                        .modal-txt.
+                            Оставьте заявку и наш менеджер свяжется с Вами в ближайшее время для уточнения деталей
+                    .modal-body
+                        form(action="")
+                            .form-group
+                                input.form-control.form-input(type="text" placeholder="Ваше имя ...")
+                            .form-group
+                                input.form-control.form-input(type="tel" placeholder="Ваш телефон ...")    
+                    .modal-footer
+                        .input-checkbox
+                            input(type="checkbox" value="1" id="formAgree" name="form_agree")
+                            label(for="formAgree").checkbox__label
+                            label(for="formAgree").input-description.
+                                Согласен(на) на обработку персональных данных
+                        button(type="submit" class="submit-btn details-link details-btn")
+                            i.glyphicon.glyphicon-menu-right
+                            | Отправить
         script(src="js/jquery.min.js")
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        script(src="js/main.js")

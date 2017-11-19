@@ -1,0 +1,162 @@
+.catalog{
+    margin-top: 130px;
+}
+.section-header{
+    margin-bottom: 60px;
+}
+.section-title{
+    color: $brown;
+    font: 46px/52px 'Merriweather-Bold';
+    position: relative;
+    margin: 0;
+    padding-left: 90px; 
+    &:before{
+        content: "";
+        height: 1px;
+        display: inline-block;
+        background-color: $brown;
+        width: 70px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+    }
+}
+.filters > .filters__item.active > .filters__link{
+   padding: 15px 20px;
+   border-radius: 50px;
+   border: 1px solid rgba($brown, .25);
+   background: none;
+   color: $darkbrown;  
+}
+.filters > .filters__item > .filters__link{
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: 1px solid $brown;
+    background: none;
+    color: $brown;  
+ }
+ .filters .filters__item{
+    margin-left: 20px;
+    float: right;
+    &:last-child{
+        margin: 0;
+    }
+}
+
+//Products
+
+.product{
+    padding: 40px;
+    transition: all ease 300ms;
+    background: linear-gradient(to right, rgba(#dac4b6, .2) 50%, rgba(#ecded5, .2) 100%); 
+    background-size:1px 100%;
+    position: relative;
+    z-index: 2;
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #262423 50%, #44413f 100%);
+        z-index: -1;
+        transition: all ease 300ms;
+        opacity: 0; 
+    } 
+}
+.product__title{
+   color: $darkbrown;
+   font-size: 20px;
+   font-family: 'GothamPro-Black';
+   margin-bottom: 35px; 
+}
+.product-view{
+    margin-bottom: 40px; 
+}
+.product__picture{
+    overflow: hidden;
+    width: 85px;
+    margin-right: 20px;
+    float: left;
+}
+.product__img{
+    width: 100%;
+}
+.product__character{
+    float: left;
+}
+.property-name{
+    font-size: 12px;
+    color: rgba($darkbrown, 0.5);
+}
+.property-value{
+    color: $darkbrown;
+}
+.colors-list{
+    padding: 0;
+    margin-bottom: 20px;
+    list-style: none; 
+}
+.color-item{
+    float: left;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 5px; 
+    &:last-child{
+        margin-right: 0; 
+    }
+}
+.label-item{
+ text-transform: uppercase;
+ color: $brown;
+ font-family: 'Merriweather-Light';
+ margin-bottom: 15px;
+ font-size: 12px;
+ &:last-child{
+    margin-bottom: 0; 
+}
+}
+.product__describtion{
+   margin-bottom: 35px;
+   font-size: 12px;
+   color: $darkbrown; 
+}
+.details-btn{
+    background-color: $lightbrown;
+    padding: 15px 80px 15px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+    i{
+        position: absolute;
+        color: $white;
+        right: 20px;
+        top: 50%;
+        margin-top: -7px;
+        margin-right: 0;
+        width: 20px;
+        &:after{
+            background-color: $white;
+        }
+    }
+    &:hover{
+        i{
+            width: 35px; 
+        }
+    } 
+}
+.product:hover{
+    .product__title,  .property-value, .label-item, .product__describtion{
+        color: $white;
+    }
+    .property-name{
+        color: rgba($white, .5);
+    }
+    &:after{
+        transition: all ease 300ms;
+        opacity: 1;
+    }
+}

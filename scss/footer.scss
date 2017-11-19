@@ -1,0 +1,56 @@
+.footer{
+    background-color: $darkbrown;
+    margin-top: 30px;
+    padding: 140px 0;
+}
+.category-menu-title{
+      color: $lightbrown;
+      font-size: 20px;
+      font-family: 'Merriweather-Bold';
+      margin-bottom: 40px;
+}
+.menu-category{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-menu__item{
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+}
+.footer-menu__link{
+    color: rgba($white, .5);
+    display: inline-block;
+    padding: 5px;
+    border-bottom: 1px solid rgba($lightbrown, 0.1);
+    transition: all ease 300ms;
+    &:hover, &:active{
+        color: rgba($white, 1);
+        border-bottom: 1px solid rgba($lightbrown, 1);
+        text-decoration: none;
+    }
+}
+.map{
+    width: 270px;
+    float: left;
+}
+.contacts{
+    float: left;
+    width: calc(100% - 330px);
+    margin-left: 60px; 
+}
+.contacts-title{
+  color: rgba($white, .25);
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 10px;  
+}
+.contats-content{
+   color: $lightbrown;
+   font-size: 16px;
+   margin-bottom: 30px; 
+}
+.contacts__phone .contats-content{
+    font-size: 20px;
+}

@@ -1,0 +1,129 @@
+.modal-dialog{
+    margin-top: 280px;
+}
+.modal-content{
+    border-radius: 0;
+    width: 470px;
+    background-color: $bege;
+    padding: 40px 45px 30px;
+    position: relative;   
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: all ease 300ms;
+    span{
+        font-size: 16px;
+    }
+    &:hover{
+        color: $darkbrown;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.modal-header, .modal-footer{
+    border: none;
+}
+.modal-header{
+    margin-bottom: 10px;
+}
+.modal-title{
+    color: $brown;
+    font-size: 20px;
+    font-family: 'GothamPro-Black';
+    margin-bottom: 15px;
+}
+.modal-txt{
+    color: $darkbrown;
+    font-size: 12px;
+}
+form{
+    border: none; 
+}
+.modal-content .form-input{
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 10px 0;
+    height: 100%;
+    color: $white;
+    background: none;
+    font-family: "GothamPro-Light";
+    box-shadow: none;
+    border-bottom: 1px solid rgba($darkbrown, 0.1);
+    @include placeholder(){
+        color: rgba($darkbrown, 0.5)
+    };
+    font-size: 12px;
+    &:focus{
+        border-bottom: 1px solid rgba($darkbrown, 1);
+        box-shadow: none;
+        @include placeholder(){
+            color: rgba($darkbrown, 1)
+        };
+    }
+}
+.modal-footer{
+    margin-top: 25px;
+}
+.submit-btn{
+    color: $white;
+    border: none;
+    position: relative;
+    margin-bottom: 0;
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}
+input[type=checkbox] {
+    visibility: hidden;
+    width:0;
+}
+.input-checkbox{
+    float: left;
+    width: 150px;
+    text-align: left;
+}
+.checkbox__label{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid rgba($brown, .5);
+    transition: all ease;
+    float: left;
+    display: block;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+.input-description{
+    float: left;
+    font-size: 12px;
+    width: calc(100% - 25px);
+    margin-left: 10px;
+    color: $darkbrown;
+    cursor: pointer;
+}
+input[type=checkbox]:checked + .checkbox__label {
+    position: relative;
+	&:after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 8px;
+        height: 8px;
+        margin-top: -4px;
+        margin-left: -4px;
+        background-color: $brown;
+        border-radius: 50%;
+    }
+}
+.input-checkbox:hover{
+    .checkbox__label{
+        border: 1px solid rgba($brown, 1); 
+    }
+}

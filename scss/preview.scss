@@ -1,0 +1,68 @@
+.banner{
+    height: 540px;
+    background-color: $begelight;
+    padding: 45px 60px 0;
+}
+.banner-text{
+    text-align: center;
+}
+.banner-picture{
+    height: 375px;
+    overflow: hidden;
+}
+.banner-img{
+    width: 100%;
+}
+.banner-describtion{
+  color: $darkbrown;
+  margin-bottom: 15px;  
+}
+.link-title{
+    color: $brown;
+    display: inline-block;
+    font: 24px 'GothamPro-Black';
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid $brown;
+    transition: all ease 300ms;
+    &:hover{
+        color: $brown;
+        border-bottom: 1px solid transparent;
+        text-decoration: none; 
+    }
+}
+.categories{
+    margin-top: 30px;
+}
+.category{
+    background-color:  $begelight;
+    padding: 65px 70px 0;
+}
+.category-text{
+    height: 250px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    .link-title{
+        margin-bottom: 40px;
+    }
+} 
+
+.category-picture{
+    height: 175px;
+    overflow: hidden;
+    img{
+        width: 100%;  
+    }
+}
+.category.dark{
+    color: $white;
+    background-color: $darkbrown;
+    .link-title{
+        color: $titlelightColor;
+        border-bottom: 1px solid $titlelightColor;
+        &:hover{
+            color: $titlelightColor;
+            border-bottom: 1px solid transparent;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.carousel{
+    height: 540px;
+}
+.carousel-indicators{
+    width: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 70px;
+    left: auto;
+    bottom: auto;
+    li{
+        display: block;
+        float: right;
+        width: 15px;
+        height: 12px;
+        margin-bottom: 10px;
+        background: none;
+        position: relative;
+        border: none;
+        transition: all ease 300ms;
+        &:after{
+            content: "";
+            height: 2px;
+            position: absolute;
+            top: 0;
+            left:0;
+            display: block;
+            width: 100%;
+            background-color: rgba($white, .15);
+        }
+        &:hover{
+            width: 30px;
+            &:after{
+                content: "";
+                height: 2px;
+                position: absolute;
+                top: 0;
+                left:0;
+                display: block;
+                width: 100%;
+                background-color: $lightbrown;
+            }
+        }
+    }
+    .active{
+        width: 30px;
+        height: 12px;
+        margin-bottom: 10px;
+        background: none;
+        &:after{
+            content: "";
+            height: 2px;
+            position: absolute;
+            top: 0;
+            left:0;
+            display: block;
+            width: 100%;
+            background-color: $lightbrown;
+        }
+    }
+}
+.carousel-caption{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 70px 120px 70px 70px;
+    background-color: rgba(#222224, 0.63);
+}
+.caption-text{
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    width: calc(100% - 190px);
+    transform: translateY(-50%);
+}
+.caption-title{
+    font-family: 'Merriweather-Bold';
+    font-size: 46px;
+    line-height: 52px;
+}
+.caption-describe{
+   font-size: 20px;
+   margin-top: 20px;
+   color: rgba($white, 0.5); 
+}
+.caption-link{
+   position: absolute;
+   bottom: 70px;
+   left: 70px;
+
+}
+.transition-timer-carousel-progress-bar {
+    height: 6px;
+    background-color: $lightbrown;
+    width: 0%;
+    margin: 0;
+    border: none;
+    z-index: 11;
+    position: absolute;
+}

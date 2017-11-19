@@ -1,8 +1,9 @@
 .header{
 padding: 45px 0;
-background-color: $darkbrown;
-height: 370px;
-color: $white; 
+min-width: 1170px; 
+color: $white;
+box-sizing: content-box; 
+font-family: "GothamPro";
 }
 .logo{
     width: 120px;
@@ -20,6 +21,7 @@ color: $white;
     padding: 0;
     margin: 0;
     list-style: none;
+    cursor: default;
 }
 .stars-list__item{
     font-size: 12px;
@@ -27,10 +29,10 @@ color: $white;
     margin-right: 40px;
     float: left;
     &:before{
-        content: "\e800";
+        content: "\e006";
         color: $bege;
-        font-family: "fontello";
         font-size: 16px;
+        font-family:'Glyphicons Halflings';
         margin-right: 15px;
         display: inline-block;
         vertical-align: middle;
@@ -39,6 +41,7 @@ color: $white;
 .stars-list__txt{
     display: inline-block;
     vertical-align: middle;
+    font-family: "GothamPro";
 }
 .phone{
   float: right;
@@ -56,6 +59,7 @@ color: $white;
 }
 .header-nav{
     padding-top: 40px;
+    min-width: 1170px; 
 }
 .navbar{
     width: 100%;
@@ -64,19 +68,25 @@ color: $white;
 .navbar .navbar-nav{
     padding-left: 0;
     padding-right: 0;
+    margin: 0;
+    height: 40px;
+    float: left;
+    li{
+        float: left;
+    }
     .nav-link{
         text-transform: uppercase;
         color: rgba($white, 0.5);
         font-family: "GothamPro-Light";
         font-size: 16px;
         padding: 10px;
-        border-bottom: 1px solid rgba($lighbrown, 0.1);
+        border-bottom: 1px solid rgba($lightbrown, 0.1);
         margin-right: 35px;
         background: none;
         transition: all ease 300ms;
         &:hover, &:active{
             color: rgba($white, 1);
-            border-bottom: 1px solid rgba($lighbrown, 1);
+            border-bottom: 1px solid rgba($lightbrown, 1);
             background: none;
         }
         &:focus{
@@ -85,18 +95,26 @@ color: $white;
     }
     li.active .nav-link{
         color: rgba($white, 1);
-        border-bottom: 1px solid rgba($lighbrown, 1);
+        border-bottom: 1px solid rgba($lightbrown, 1);
         background: none;
     } 
 }
 
 .navbar-form{
     float: right;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border: 0;
 }
 .navbar-search{
     width: 270px;
+    height: 40px;
+    position: relative;
     .form-group{
         width: 100%;
+        height: 100%;
+        margin: 0;
     }
 }
 .btn-search{
@@ -104,19 +122,18 @@ color: $white;
     outline: none;
     border: none;
     position: absolute;
-    right: 20px;
-    top: 50%;
-    margin-top: -13px;
+    right: 0;
+    bottom: 7px;
 }
 
-.navbar-form .form-control.input-search{
+.navbar-form .form-control.form-input{
     width: 100%;
     border: none;
     border-radius: 0;
     padding: 10px 0;
+    height: 100%;
     color: $white;
     background: none;
-    position: relative;
     font-family: "GothamPro-Light";
     border-bottom: 1px solid rgba($white, 0.1);
     @include placeholder(){
@@ -132,5 +149,5 @@ color: $white;
     }
 }
 .glyphicon-search{
-    color: $lighbrown;  
+    color: $lightbrown;  
 }
