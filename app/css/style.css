@@ -500,7 +500,7 @@ a:focus {
   -webkit-transition: all ease 300ms;
   transition: all ease 300ms; }
 
-.link-title:hover {
+.link-title:hover, .link-title:focus {
     color: #83644e;
     border-bottom: 1px solid transparent;
     text-decoration: none; }
@@ -535,7 +535,7 @@ a:focus {
     color: #ebdcd3;
     border-bottom: 1px solid #ebdcd3; }
 
-.category.dark .link-title:hover {
+.category.dark .link-title:hover, .category.dark .link-title:focus {
       color: #ebdcd3;
       border-bottom: 1px solid transparent; }
 

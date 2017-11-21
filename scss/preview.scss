@@ -25,7 +25,7 @@
     margin-bottom: 50px;
     border-bottom: 1px solid $brown;
     transition: all ease 300ms;
-    &:hover{
+    &:hover, &:focus{
         color: $brown;
         border-bottom: 1px solid transparent;
         text-decoration: none; 
@@ -60,7 +60,7 @@
     .link-title{
         color: $titlelightColor;
         border-bottom: 1px solid $titlelightColor;
-        &:hover{
+        &:hover, &:focus{
             color: $titlelightColor;
             border-bottom: 1px solid transparent;
         }
