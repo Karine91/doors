@@ -34,7 +34,12 @@
     border-radius: 50px;
     border: 1px solid $brown;
     background: none;
-    color: $brown;  
+    color: $brown;
+    transition: all ease 300ms;
+    &:focus, &:hover{
+        border: 1px solid rgba($brown, .25);
+        color: $darkbrown;  
+    }  
  }
  .filters .filters__item{
     margin-left: 20px;
@@ -69,7 +74,7 @@
 .product__title{
    color: $darkbrown;
    font-size: 20px;
-   font-family: 'GothamPro-Black';
+   font-family: 'GothamPro-Black', sans-serif;
    margin-bottom: 35px; 
 }
 .product-view{
@@ -112,7 +117,7 @@
 .label-item{
  text-transform: uppercase;
  color: $brown;
- font-family: 'Merriweather-Light';
+ font-family: 'Merriweather-Light', sans-serif;
  margin-bottom: 15px;
  font-size: 12px;
  &:last-child{

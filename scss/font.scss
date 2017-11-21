@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'GothamPro-Black';
+  src: url('../fonts/GothamPro-Black.woff') format('woff'),
+       url('../fonts/GothamPro-Black.ttf') format('truetype'),
+       url('../fonts/GothamPro-Black.svg#GothamPro-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather-Regular';
+  src: url('../fonts/Merriweather-Regular.woff') format('woff'),
+       url('../fonts/Merriweather-Regular.ttf') format('truetype'),
+       url('../fonts/Merriweather-Regular.svg#Merriweather-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MerriweatherRegulara';
+  src: url('../fonts/MerriweatherRegulara.eot');
+  src: url('../fonts/MerriweatherRegulara.woff2') format('woff2'),
+       url('../fonts/MerriweatherRegulara.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamPro-BlackItalic';
+  src: url('../fonts/GothamPro-BlackItalic.woff') format('woff'),
+       url('../fonts/GothamPro-BlackItalic.ttf') format('truetype'),
+       url('../fonts/GothamPro-BlackItalic.svg#GothamPro-BlackItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamPro-Bold';
+  src: url('../fonts/GothamPro-Bold.woff') format('woff'),
+       url('../fonts/GothamPro-Bold.ttf') format('truetype'),
+       url('../fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamPro-BoldItalic';
+  src: url('../fonts/GothamPro-BoldItalic.woff') format('woff'),
+       url('../fonts/GothamPro-BoldItalic.ttf') format('truetype'),
+       url('../fonts/GothamPro-BoldItalic.svg#GothamPro-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamPro-Italic';
+  src: url('../fonts/GothamPro-Italic.woff') format('woff'),
+       url('../fonts/GothamPro-Italic.ttf') format('truetype'),
+       url('../fonts/GothamPro-Italic.svg#GothamPro-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamPro-Light';
+  src: url('../fonts/GothamPro-Light.woff') format('woff'),
+       url('../fonts/GothamPro-Light.ttf') format('truetype'),
+       url('../fonts/GothamPro-Light.svg#GothamPro-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamPro-LightItalic';
+  src: url('../fonts/GothamPro-LightItalic.woff') format('woff'),
+       url('../fonts/GothamPro-LightItalic.ttf') format('truetype'),
+       url('../fonts/GothamPro-LightItalic.svg#GothamPro-LightItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamPro-Medium';
+  src: url('../fonts/GothamPro-Medium.woff') format('woff'),
+       url('../fonts/GothamPro-Medium.ttf') format('truetype'),
+       url('../fonts/GothamPro-Medium.svg#GothamPro-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamPro-MediumItalic';
+  src: url('../fonts/GothamPro-MediumItalic.woff') format('woff'),
+       url('../fonts/GothamPro-MediumItalic.ttf') format('truetype'),
+       url('../fonts/GothamPro-MediumItalic.svg#GothamPro-MediumItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../fonts/GothamPro.woff') format('woff'),
+       url('../fonts/GothamPro.ttf') format('truetype'),
+       url('../fonts/GothamPro.svg#GothamPro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Merriweather-Bold';
+  src: url('../fonts/Merriweather-Bold.woff') format('woff'),
+       url('../fonts/Merriweather-Bold.ttf') format('truetype'),
+       url('../fonts/Merriweather-Bold.svg#Merriweather-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Merriweather-BoldItalic';
+  src: url('../fonts/Merriweather-BoldItalic.woff') format('woff'),
+       url('../fonts/Merriweather-BoldItalic.ttf') format('truetype'),
+       url('../fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Merriweather-Italic';
+  src: url('../fonts/Merriweather-Italic.woff') format('woff'),
+       url('../fonts/Merriweather-Italic.ttf') format('truetype'),
+       url('../fonts/Merriweather-Italic.svg#Merriweather-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Merriweather-Light';
+  src: url('../fonts/Merriweather-Light.woff') format('woff'),
+       url('../fonts/Merriweather-Light.ttf') format('truetype'),
+       url('../fonts/Merriweather-Light.svg#Merriweather-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Merriweather-LightIt';
+  src: url('../fonts/Merriweather-LightIt.woff') format('woff'),
+       url('../fonts/Merriweather-LightIt.ttf') format('truetype'),
+       url('../fonts/Merriweather-LightIt.svg#Merriweather-LightIt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

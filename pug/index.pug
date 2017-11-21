@@ -5,13 +5,12 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        link(href="fonts/font.css" rel="stylesheet")
         link(href="css/style.css" rel="stylesheet")
     body    
         .main
             header.header
                 .header-top
-                    .container.p-0
+                    .container-no-padding
                         .logo
                             a(href="#").logo__link
                                 img(src="img/logo.png" alt="").logo__img
@@ -30,7 +29,7 @@ html(lang="ru")
                             span.phohe-code 8 (4833) 
                             span.phone-end 52-02-66
                 .header-nav
-                    .container.p-0
+                    .container-no-padding
                         .navbar
                             ul.nav.navbar-nav
                                 - var menu=["Главная", "Каталог", "О заводе", "Контакты", "обратная связь"]
@@ -46,7 +45,7 @@ html(lang="ru")
                                     button(class="btn-search" type="submit")
                                         span.glyphicon.glyphicon-search(aria-hidden="true")
             section.preview
-                .container.p-0
+                .container-no-padding
                     .row
                         .col-xs-8
                             #carousel.carousel.slide
@@ -93,7 +92,7 @@ html(lang="ru")
                                     .category-picture
                                         img(src="img/category2.jpg" alt="")
             section.catalog
-                .container.p-0
+                .container-no-padding
                     .section-header
                         .row
                             .col-xs-6
@@ -131,7 +130,7 @@ html(lang="ru")
                                                 i.glyphicon.glyphicon-menu-right 
                                                 | Подробнее
         section.production
-            .container.p-0
+            .container-no-padding
                 .section-header
                     .row
                         .col-xs-12
@@ -156,23 +155,23 @@ html(lang="ru")
                             | Доставка во все <br> регионы 
                             span.text-highlight от 1 дня
         footer.footer
-            .container.p-0
-                .footer-menu.col-xs-6.p-0
+            .container-no-padding
+                .footer-menu.col-xs-6
                     .menu-group.col-xs-6
                         .category-menu-title Двери из экошпона
-                        ul.menu-category
+                        ul.menu-category.clearfix
                             -var footer_menu = ['Барселона', 'Мадрид', 'Венеция', 'Европа','Офелия',   'Италия']
                             each item in footer_menu
                                 li.footer-menu__item
                                     a(href="#").footer-menu__link #{item}
                     .menu-group.col-xs-6
                         .category-menu-title Двери из стекла
-                        ul.menu-category
+                        ul.menu-category.clearfix
                             -var footer_menu = ['Барселона', 'Мадрид', 'Венеция', 'Европа','Офелия',   'Италия']
                             each item in footer_menu
                                 li.footer-menu__item
                                     a(href="#").footer-menu__link #{item}
-                .contacts-wrap.col-xs-6.p-0
+                .contacts-wrap.col-xs-6
                     .map
                         <iframe src="https://yandex.ua/map-widget/v1/-/CBaVU8F42C" width="270" height="250" frameborder="0"></iframe>
                     .contacts

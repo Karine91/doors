@@ -32,7 +32,7 @@
 .modal-title{
     color: $brown;
     font-size: 20px;
-    font-family: 'GothamPro-Black';
+    font-family: 'GothamPro-Black', sans-serif;
     margin-bottom: 15px;
 }
 .modal-txt{
@@ -48,9 +48,9 @@ form{
     border-radius: 0;
     padding: 10px 0;
     height: 100%;
-    color: $white;
+    color: $darkbrown;
     background: none;
-    font-family: "GothamPro-Light";
+    font-family: "GothamPro-Light", sans-serif;
     box-shadow: none;
     border-bottom: 1px solid rgba($darkbrown, 0.1);
     @include placeholder(){
@@ -96,7 +96,7 @@ input[type=checkbox] {
     float: left;
     display: block;
     position: relative;
-    top: 2px;
+    top: 5px;
     cursor: pointer;
 }
 .input-description{

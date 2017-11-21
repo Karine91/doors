@@ -6,13 +6,16 @@
 .category-menu-title{
       color: $lightbrown;
       font-size: 20px;
-      font-family: 'Merriweather-Bold';
+      font-family: 'Merriweather-Bold', sans-serif;
       margin-bottom: 40px;
 }
 .menu-category{
     list-style: none;
     padding: 0;
     margin: 0;
+}
+.footer-menu{
+    padding: 0;
 }
 .footer-menu__item{
     float: left;
@@ -25,7 +28,7 @@
     padding: 5px;
     border-bottom: 1px solid rgba($lightbrown, 0.1);
     transition: all ease 300ms;
-    &:hover, &:active{
+    &:hover, &:active, &:focus{
         color: rgba($white, 1);
         border-bottom: 1px solid rgba($lightbrown, 1);
         text-decoration: none;
@@ -34,6 +37,9 @@
 .map{
     width: 270px;
     float: left;
+}
+.contacts-wrap{
+padding: 0;
 }
 .contacts{
     float: left;

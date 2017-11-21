@@ -1,13 +1,14 @@
 body, html{
     margin: 0;
     padding: 0;
-    font: 16px/22px "GothamPro-Light"
+    font: 16px/22px "GothamPro-Light", sans-serif;
 }
 .main{
     position: relative;
     min-width: 1170px;
     background: #FFF;
     padding: 0 115px;
+    box-sizing: content-box;
     z-index: 2;
     &:after{
         content: "";
@@ -23,15 +24,22 @@ body, html{
 .container{
     width: 1170px;
     max-width: none !important;
+    margin: 0 auto;
 }
-.p-0{
+.container-no-padding{
+    @extend .container;
+    &:before, &:after{
+        content: "";
+        display: table;
+    }
+    &:after{
+        clear: both;
+    }
     padding: 0;
 }
-.mr-30{
-    margin-right: 30px;
-}
+
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Merriweather-Bold';
+    font-family: 'Merriweather-Bold', sans-serif;
 }
 h1{
     font-size: 46px;
@@ -45,7 +53,11 @@ h3{
     font-size: 20px;
     line-height: 26px;
 }
-
+a:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
 .details-link{
     color: $white;
     i{
@@ -71,7 +83,7 @@ h3{
             right: 6px;
         }
     }
-    &:hover{
+    &:hover, &:focus{
         color: $white;
         text-decoration: none;
         i{
