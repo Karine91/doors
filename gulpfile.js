@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var pug = require('gulp-pug');
-var through         = require('through2');
 var useref = require('gulp-useref');
 var gulpif = require('gulp-if');
 var uglify = require('gulp-uglify');    
@@ -10,10 +9,11 @@ var sass = require("gulp-sass");
 var postcss    = require('gulp-postcss');
 var sourcemaps = require('gulp-sourcemaps');
 var plumber = require('gulp-plumber');
+var cleanCSS = require('gulp-clean-css');
 
 //Build
 gulp.task('build', function () {
-    return gulp.src('app/*.html')
+    return gulp.src('app/**/*.*')
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
         .pipe(gulpif('*.css', cleanCSS()))
