@@ -97,4 +97,4 @@ gulp.task('watch', function(){
 gulp.task('default', gulp.series('pug','scss','postcss', gulp.parallel('server', "watch")));
 
 //build
-gulp.task('deploy', gulp.series('clean', gulp.parallel('pug','scss','postcss','build', 'fonts', 'images')));
+gulp.task('deploy', gulp.series('clean', gulp.parallel('pug','scss','postcss','build')));
