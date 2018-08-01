@@ -1,121 +1,67 @@
 @font-face {
-  font-family: 'GothamPro-Black';
-  src: url("../fonts/GothamPro-Black.woff") format("woff"), url("../fonts/GothamPro-Black.ttf") format("truetype"), url("../fonts/GothamPro-Black.svg#GothamPro-Black") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro.eot");
+  src: url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype"), url("../fonts/GothamPro.svg#GothamPro") format("svg");
+  font-style: normal;
+  font-weight: normal; }
 
 @font-face {
-  font-family: 'Merriweather-Regular';
-  src: url("../fonts/Merriweather-Regular.woff") format("woff"), url("../fonts/Merriweather-Regular.ttf") format("truetype"), url("../fonts/Merriweather-Regular.svg#Merriweather-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro-Bold.eot");
+  src: url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype"), url("../fonts/GothamPro-Bold.svg#GothamPro") format("svg");
+  font-style: normal;
+  font-weight: normal; }
 
 @font-face {
-  font-family: 'MerriweatherRegulara';
-  src: url("../fonts/MerriweatherRegulara.eot");
-  src: url("../fonts/MerriweatherRegulara.woff2") format("woff2"), url("../fonts/MerriweatherRegulara.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: "GothamPro-Black";
+  src: url("../fonts/GothamPro-Black.eot");
+  src: url("../fonts/GothamPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Black.woff") format("woff"), url("../fonts/GothamPro-Black.ttf") format("truetype"), url("../fonts/GothamPro-Black.svg#GothamPro-Black") format("svg");
+  font-style: normal;
+  font-weight: normal; }
 
 @font-face {
-  font-family: 'GothamPro-BlackItalic';
-  src: url("../fonts/GothamPro-BlackItalic.woff") format("woff"), url("../fonts/GothamPro-BlackItalic.ttf") format("truetype"), url("../fonts/GothamPro-BlackItalic.svg#GothamPro-BlackItalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: "GothamPro-Light";
+  src: url("../fonts/GothamPro-Light.eot");
+  src: url("../fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light.ttf") format("truetype"), url("../fonts/GothamPro-Light.svg#GothamPro-Light") format("svg");
+  font-style: normal;
+  font-weight: normal; }
 
 @font-face {
-  font-family: 'GothamPro-Bold';
-  src: url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype"), url("../fonts/GothamPro-Bold.svg#GothamPro-Bold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: "GothamPro-LightItalic";
+  src: url("../fonts/GothamPro-LightItalic.eot");
+  src: url("../fonts/GothamPro-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-LightItalic.woff") format("woff"), url("../fonts/GothamPro-LightItalic.ttf") format("truetype"), url("../fonts/GothamPro-LightItalic.svg#GothamPro-LightItalic") format("svg");
+  font-style: normal;
+  font-weight: normal; }
 
 @font-face {
-  font-family: 'GothamPro-BoldItalic';
-  src: url("../fonts/GothamPro-BoldItalic.woff") format("woff"), url("../fonts/GothamPro-BoldItalic.ttf") format("truetype"), url("../fonts/GothamPro-BoldItalic.svg#GothamPro-BoldItalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: "Merriweather-Bold";
+  src: url("../fonts/Merriweather-Bold.eot");
+  src: url("../fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-Bold.woff") format("woff"), url("../fonts/Merriweather-Bold.ttf") format("truetype"), url("../fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  font-style: normal;
+  font-weight: normal; }
 
 @font-face {
-  font-family: 'GothamPro-Italic';
-  src: url("../fonts/GothamPro-Italic.woff") format("woff"), url("../fonts/GothamPro-Italic.ttf") format("truetype"), url("../fonts/GothamPro-Italic.svg#GothamPro-Italic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: "Merriweather-Light";
+  src: url("../fonts/Merriweather-Light.eot");
+  src: url("../fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-Light.woff") format("woff"), url("../fonts/Merriweather-Light.ttf") format("truetype"), url("../fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
+  font-style: normal;
+  font-weight: normal; }
 
-@font-face {
-  font-family: 'GothamPro-Light';
-  src: url("../fonts/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light.ttf") format("truetype"), url("../fonts/GothamPro-Light.svg#GothamPro-Light") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'GothamPro-LightItalic';
-  src: url("../fonts/GothamPro-LightItalic.woff") format("woff"), url("../fonts/GothamPro-LightItalic.ttf") format("truetype"), url("../fonts/GothamPro-LightItalic.svg#GothamPro-LightItalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'GothamPro-Medium';
-  src: url("../fonts/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium.ttf") format("truetype"), url("../fonts/GothamPro-Medium.svg#GothamPro-Medium") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'GothamPro-MediumItalic';
-  src: url("../fonts/GothamPro-MediumItalic.woff") format("woff"), url("../fonts/GothamPro-MediumItalic.ttf") format("truetype"), url("../fonts/GothamPro-MediumItalic.svg#GothamPro-MediumItalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'GothamPro';
-  src: url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype"), url("../fonts/GothamPro.svg#GothamPro") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Merriweather-Bold';
-  src: url("../fonts/Merriweather-Bold.woff") format("woff"), url("../fonts/Merriweather-Bold.ttf") format("truetype"), url("../fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Merriweather-BoldItalic';
-  src: url("../fonts/Merriweather-BoldItalic.woff") format("woff"), url("../fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Merriweather-Italic';
-  src: url("../fonts/Merriweather-Italic.woff") format("woff"), url("../fonts/Merriweather-Italic.ttf") format("truetype"), url("../fonts/Merriweather-Italic.svg#Merriweather-Italic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Merriweather-Light';
-  src: url("../fonts/Merriweather-Light.woff") format("woff"), url("../fonts/Merriweather-Light.ttf") format("truetype"), url("../fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Merriweather-LightIt';
-  src: url("../fonts/Merriweather-LightIt.woff") format("woff"), url("../fonts/Merriweather-LightIt.ttf") format("truetype"), url("../fonts/Merriweather-LightIt.svg#Merriweather-LightIt") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
+  min-width: 1170px;
   font: 16px/22px "GothamPro-Light", sans-serif; }
 
 .main {
   position: relative;
   min-width: 1170px;
-  background: #FFF;
+  background: #fff;
   padding: 0 115px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   z-index: 2; }
-
-.main:after {
+  .main:after {
     content: "";
     width: 100%;
     height: 370px;
@@ -132,16 +78,19 @@ body, html {
 
 .container-no-padding {
   padding: 0; }
-
-.container-no-padding:before, .container-no-padding:after {
+  .container-no-padding:before, .container-no-padding:after {
     content: "";
     display: table; }
-
-.container-no-padding:after {
+  .container-no-padding:after {
     clear: both; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather-Bold', sans-serif; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather-Bold", sans-serif; }
 
 h1 {
   font-size: 46px;
@@ -157,27 +106,22 @@ h3 {
 
 a:focus {
   outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: none; }
 
 .details-link {
   color: #fff; }
-
-.details-link i {
+  .details-link i {
     color: #bea491;
     width: 70px;
-    -webkit-transition: all ease 300ms;
     transition: all ease 300ms;
     height: 14px;
     position: relative;
     margin-right: 14px; }
-
-.details-link i:before {
+    .details-link i:before {
       position: absolute;
       right: 0; }
-
-.details-link i:after {
+    .details-link i:after {
       content: "";
       height: 2px;
       width: 100%;
@@ -187,20 +131,17 @@ a:focus {
       top: 50%;
       margin-top: -1px;
       right: 6px; }
-
-.details-link:hover, .details-link:focus {
+  .details-link:hover, .details-link:focus {
     color: #fff;
     text-decoration: none; }
-
-.details-link:hover i, .details-link:focus i {
+    .details-link:hover i, .details-link:focus i {
       width: 40px; }
 
 .header {
   padding: 45px 0;
   min-width: 1170px;
   color: #fff;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   font-family: "GothamPro", sans-serif; }
 
 .logo {
@@ -226,8 +167,7 @@ a:focus {
   color: rgba(255, 255, 255, 0.5);
   margin-right: 40px;
   float: left; }
-
-.stars-list__item:before {
+  .stars-list__item:before {
     content: "\e006";
     color: #eadcd3;
     font-size: 16px;
@@ -269,11 +209,9 @@ a:focus {
   margin: 0;
   height: 40px;
   float: left; }
-
-.navbar .navbar-nav li {
+  .navbar .navbar-nav li {
     float: left; }
-
-.navbar .navbar-nav .nav-link {
+  .navbar .navbar-nav .nav-link {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
     font-family: "GothamPro-Light", sans-serif;
@@ -282,18 +220,14 @@ a:focus {
     border-bottom: 1px solid rgba(190, 164, 145, 0.1);
     margin-right: 35px;
     background: none;
-    -webkit-transition: all ease 300ms;
     transition: all ease 300ms; }
-
-.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:active {
+    .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:active {
       color: white;
       border-bottom: 1px solid #bea491;
       background: none; }
-
-.navbar .navbar-nav .nav-link:focus {
+    .navbar .navbar-nav .nav-link:focus {
       outline: none; }
-
-.navbar .navbar-nav li.active .nav-link {
+  .navbar .navbar-nav li.active .nav-link {
     color: white;
     border-bottom: 1px solid #bea491;
     background: none; }
@@ -302,16 +236,14 @@ a:focus {
   float: right;
   padding: 0;
   margin: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: 0; }
 
 .navbar-search {
   width: 270px;
   height: 40px;
   position: relative; }
-
-.navbar-search .form-group {
+  .navbar-search .form-group {
     width: 100%;
     height: 100%;
     margin: 0; }
@@ -335,34 +267,24 @@ a:focus {
   font-family: "GothamPro-Light", sans-serif;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 12px; }
-
-.navbar-form .form-control.form-input::-webkit-input-placeholder {
+  .navbar-form .form-control.form-input::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5); }
-
-.navbar-form .form-control.form-input:-moz-placeholder {
+  .navbar-form .form-control.form-input:-moz-placeholder {
     color: rgba(255, 255, 255, 0.5); }
-
-.navbar-form .form-control.form-input::-moz-placeholder {
+  .navbar-form .form-control.form-input::-moz-placeholder {
     color: rgba(255, 255, 255, 0.5); }
-
-.navbar-form .form-control.form-input:-ms-input-placeholder {
+  .navbar-form .form-control.form-input:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.5); }
-
-.navbar-form .form-control.form-input:focus {
+  .navbar-form .form-control.form-input:focus {
     border-bottom: 1px solid white;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-
-.navbar-form .form-control.form-input:focus::-webkit-input-placeholder {
+    box-shadow: none; }
+    .navbar-form .form-control.form-input:focus::-webkit-input-placeholder {
       color: white; }
-
-.navbar-form .form-control.form-input:focus:-moz-placeholder {
+    .navbar-form .form-control.form-input:focus:-moz-placeholder {
       color: white; }
-
-.navbar-form .form-control.form-input:focus::-moz-placeholder {
+    .navbar-form .form-control.form-input:focus::-moz-placeholder {
       color: white; }
-
-.navbar-form .form-control.form-input:focus:-ms-input-placeholder {
+    .navbar-form .form-control.form-input:focus:-ms-input-placeholder {
       color: white; }
 
 .glyphicon-search {
@@ -374,13 +296,11 @@ a:focus {
 .carousel-indicators {
   width: 30px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 70px;
   left: auto;
   bottom: auto; }
-
-.carousel-indicators li {
+  .carousel-indicators li {
     display: block;
     float: right;
     width: 15px;
@@ -389,10 +309,8 @@ a:focus {
     background: none;
     position: relative;
     border: none;
-    -webkit-transition: all ease 300ms;
     transition: all ease 300ms; }
-
-.carousel-indicators li:after {
+    .carousel-indicators li:after {
       content: "";
       height: 2px;
       position: absolute;
@@ -401,11 +319,9 @@ a:focus {
       display: block;
       width: 100%;
       background-color: rgba(255, 255, 255, 0.15); }
-
-.carousel-indicators li:hover {
+    .carousel-indicators li:hover {
       width: 30px; }
-
-.carousel-indicators li:hover:after {
+      .carousel-indicators li:hover:after {
         content: "";
         height: 2px;
         position: absolute;
@@ -414,14 +330,12 @@ a:focus {
         display: block;
         width: 100%;
         background-color: #bea491; }
-
-.carousel-indicators .active {
+  .carousel-indicators .active {
     width: 30px;
     height: 12px;
     margin-bottom: 10px;
     background: none; }
-
-.carousel-indicators .active:after {
+    .carousel-indicators .active:after {
       content: "";
       height: 2px;
       position: absolute;
@@ -444,8 +358,7 @@ a:focus {
   text-align: left;
   top: 50%;
   width: calc(100% - 190px);
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
+  transform: translateY(-50%); }
 
 .caption-title {
   font-family: 'Merriweather-Bold', sans-serif;
@@ -497,10 +410,8 @@ a:focus {
   padding-bottom: 5px;
   margin-bottom: 50px;
   border-bottom: 1px solid #83644e;
-  -webkit-transition: all ease 300ms;
   transition: all ease 300ms; }
-
-.link-title:hover, .link-title:focus {
+  .link-title:hover, .link-title:focus {
     color: #83644e;
     border-bottom: 1px solid transparent;
     text-decoration: none; }
@@ -516,26 +427,22 @@ a:focus {
   height: 250px;
   margin-bottom: 30px;
   overflow: hidden; }
-
-.category-text .link-title {
+  .category-text .link-title {
     margin-bottom: 40px; }
 
 .category-picture {
   height: 175px;
   overflow: hidden; }
-
-.category-picture img {
+  .category-picture img {
     width: 100%; }
 
 .category.dark {
   color: #fff;
   background-color: #262423; }
-
-.category.dark .link-title {
+  .category.dark .link-title {
     color: #ebdcd3;
     border-bottom: 1px solid #ebdcd3; }
-
-.category.dark .link-title:hover, .category.dark .link-title:focus {
+    .category.dark .link-title:hover, .category.dark .link-title:focus {
       color: #ebdcd3;
       border-bottom: 1px solid transparent; }
 
@@ -551,8 +458,7 @@ a:focus {
   position: relative;
   margin: 0;
   padding-left: 90px; }
-
-.section-title:before {
+  .section-title:before {
     content: "";
     height: 1px;
     display: inline-block;
@@ -575,41 +481,33 @@ a:focus {
   border: 1px solid #83644e;
   background: none;
   color: #83644e;
-  -webkit-transition: all ease 300ms;
   transition: all ease 300ms; }
-
-.filters > .filters__item > .filters__link:focus, .filters > .filters__item > .filters__link:hover {
+  .filters > .filters__item > .filters__link:focus, .filters > .filters__item > .filters__link:hover {
     border: 1px solid rgba(131, 100, 78, 0.25);
     color: #262423; }
 
 .filters .filters__item {
   margin-left: 20px;
   float: right; }
-
-.filters .filters__item:last-child {
+  .filters .filters__item:last-child {
     margin: 0; }
 
 .product {
   padding: 40px;
-  -webkit-transition: all ease 300ms;
   transition: all ease 300ms;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(218, 196, 182, 0.2)), to(rgba(236, 222, 213, 0.2)));
   background: linear-gradient(to right, rgba(218, 196, 182, 0.2) 50%, rgba(236, 222, 213, 0.2) 100%);
   background-size: 1px 100%;
   position: relative;
   z-index: 2; }
-
-.product:after {
+  .product:after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #262423), to(#44413f));
     background: linear-gradient(to right, #262423 50%, #44413f 100%);
     z-index: -1;
-    -webkit-transition: all ease 300ms;
     transition: all ease 300ms;
     opacity: 0; }
 
@@ -652,8 +550,7 @@ a:focus {
   height: 13px;
   border-radius: 50%;
   margin-right: 5px; }
-
-.color-item:last-child {
+  .color-item:last-child {
     margin-right: 0; }
 
 .label-item {
@@ -662,8 +559,7 @@ a:focus {
   font-family: 'Merriweather-Light', sans-serif;
   margin-bottom: 15px;
   font-size: 12px; }
-
-.label-item:last-child {
+  .label-item:last-child {
     margin-bottom: 0; }
 
 .product__describtion {
@@ -677,8 +573,7 @@ a:focus {
   border-radius: 30px;
   display: inline-block;
   position: relative; }
-
-.details-btn i {
+  .details-btn i {
     position: absolute;
     color: #fff;
     right: 20px;
@@ -686,11 +581,9 @@ a:focus {
     margin-top: -7px;
     margin-right: 0;
     width: 20px; }
-
-.details-btn i:after {
+    .details-btn i:after {
       background-color: #fff; }
-
-.details-btn:hover i {
+  .details-btn:hover i {
     width: 35px; }
 
 .product:hover .product__title, .product:hover .property-value, .product:hover .label-item, .product:hover .product__describtion {
@@ -700,7 +593,6 @@ a:focus {
   color: rgba(255, 255, 255, 0.5); }
 
 .product:hover:after {
-  -webkit-transition: all ease 300ms;
   transition: all ease 300ms;
   opacity: 1; }
 
@@ -715,18 +607,15 @@ a:focus {
   height: 445px;
   overflow: hidden;
   position: relative; }
-
-.production__item:last-child {
+  .production__item:last-child {
     margin-right: 0; }
-
-.production__item:after {
+  .production__item:after {
     position: absolute;
     content: "";
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(38, 36, 35, 0)), to(#262423));
     background: linear-gradient(to bottom, rgba(38, 36, 35, 0) 50%, #262423 100%); }
 
 .production__img {
@@ -734,8 +623,7 @@ a:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%); }
 
 .production__describtion {
   position: absolute;
@@ -779,10 +667,8 @@ a:focus {
   display: inline-block;
   padding: 5px;
   border-bottom: 1px solid rgba(190, 164, 145, 0.1);
-  -webkit-transition: all ease 300ms;
   transition: all ease 300ms; }
-
-.footer-menu__link:hover, .footer-menu__link:active, .footer-menu__link:focus {
+  .footer-menu__link:hover, .footer-menu__link:active, .footer-menu__link:focus {
     color: white;
     border-bottom: 1px solid #bea491;
     text-decoration: none; }
@@ -827,16 +713,12 @@ a:focus {
   position: absolute;
   top: 20px;
   right: 20px;
-  -webkit-transition: all ease 300ms;
   transition: all ease 300ms; }
-
-.close span {
+  .close span {
     font-size: 16px; }
-
-.close:hover {
+  .close:hover {
     color: #262423; }
-
-.close:focus {
+  .close:focus {
     outline: none; }
 
 .modal-header, .modal-footer {
@@ -867,38 +749,27 @@ form {
   color: #262423;
   background: none;
   font-family: "GothamPro-Light", sans-serif;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border-bottom: 1px solid rgba(38, 36, 35, 0.1);
   font-size: 12px; }
-
-.modal-content .form-input::-webkit-input-placeholder {
+  .modal-content .form-input::-webkit-input-placeholder {
     color: rgba(38, 36, 35, 0.5); }
-
-.modal-content .form-input:-moz-placeholder {
+  .modal-content .form-input:-moz-placeholder {
     color: rgba(38, 36, 35, 0.5); }
-
-.modal-content .form-input::-moz-placeholder {
+  .modal-content .form-input::-moz-placeholder {
     color: rgba(38, 36, 35, 0.5); }
-
-.modal-content .form-input:-ms-input-placeholder {
+  .modal-content .form-input:-ms-input-placeholder {
     color: rgba(38, 36, 35, 0.5); }
-
-.modal-content .form-input:focus {
+  .modal-content .form-input:focus {
     border-bottom: 1px solid #262423;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-
-.modal-content .form-input:focus::-webkit-input-placeholder {
+    box-shadow: none; }
+    .modal-content .form-input:focus::-webkit-input-placeholder {
       color: #262423; }
-
-.modal-content .form-input:focus:-moz-placeholder {
+    .modal-content .form-input:focus:-moz-placeholder {
       color: #262423; }
-
-.modal-content .form-input:focus::-moz-placeholder {
+    .modal-content .form-input:focus::-moz-placeholder {
       color: #262423; }
-
-.modal-content .form-input:focus:-ms-input-placeholder {
+    .modal-content .form-input:focus:-ms-input-placeholder {
       color: #262423; }
 
 .modal-footer {
@@ -909,11 +780,9 @@ form {
   border: none;
   position: relative;
   margin-bottom: 0; }
-
-.submit-btn:focus {
+  .submit-btn:focus {
     outline: none;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+    box-shadow: none; }
 
 input[type=checkbox] {
   visibility: hidden;
@@ -929,7 +798,6 @@ input[type=checkbox] {
   height: 14px;
   border-radius: 50%;
   border: 1px solid rgba(131, 100, 78, 0.5);
-  -webkit-transition: all ease;
   transition: all ease;
   float: left;
   display: block;
@@ -947,8 +815,7 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked + .checkbox__label {
   position: relative; }
-
-input[type=checkbox]:checked + .checkbox__label:after {
+  input[type=checkbox]:checked + .checkbox__label:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -962,13 +829,3 @@ input[type=checkbox]:checked + .checkbox__label:after {
 
 .input-checkbox:hover .checkbox__label {
   border: 1px solid #83644e; }
-
-/*# sourceMappingURL=style.css.map */
-
-/*# sourceMappingURL=style.css.map */
-
-/*# sourceMappingURL=style.css.map */
-
-/*# sourceMappingURL=style.css.map */
-
-/*# sourceMappingURL=style.css.map */
